@@ -10,8 +10,10 @@
 <body>
   <!-- Шапка-->
   <header class="header">
+    <div class="container">
+      <nav class="main-navigation">
     <a class="logo" href="https://htmlacademy.ru/"><img src="img/logo.svg" width="145" height="35" alt="Лого Device"> </a>
-    <div class="menu-user">
+   <div class="menu-user">
       <!-- Поле поиска-->
       <div class="search">
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
@@ -21,13 +23,14 @@
       </div>
       <!-- Пользовательское меню-->
       <ul class="user-menu">
-        <li class="user-item"><a class="enter-link" href="#"> Войти </a> </li>
-        <li class="user-item"><a class="compare-link" href="#"> Сравнить </a> </li>
-        <li class="user-item"><a class="cart-link" href="#"> Корзина </a> </li>
+        <li class="user-item user-login"><a class="enter-link" href="#"> Войти </a> </li>
+        <li class="user-item user-compare"><a class="compare-link" href="#"> Сравнить </a> </li>
+        <li class="user-item user-cart"><a class="cart-link" href="#"> Корзина </a> </li>
       </ul>
     </div>
+    
     <!-- Основное меню-->
-    <nav class="nav-menu">
+    
       <ul class="main-menu">
         <li class="main-item"><a class="navigation-link" href="catalog.html"> Каталог товаров </a>
           <!-- Подменю каталога-->
@@ -45,6 +48,7 @@
         <li class="main-item"><a class="navigation-link" href="#"> Контакты </a></li>
       </ul>
     </nav>
+  </div>
   </header>
 
   <main class="main">
@@ -183,28 +187,28 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <a class="catalog-item item-link"> </a>
-            <p class="catalog-item item-name">Виртуальная реальность</p>
+            <a class="catalog-item item-link" href="#">Виртуальная реальность </a>
+            
           </li>
           <li class="catalog-item">
-            <a class="catalog-item item-link"> </a>
-            <p class="catalog-item item-name">Моноподы для селфи</p>
+            <a class="catalog-item item-link" href="#" >Моноподы для селфи </a>
+            
           </li>
           <li class="catalog-item">
-            <a class="catalog-item item-link"> </a>
-            <p class="catalog-item item-name">Экшн-камеры</p>
+            <a class="catalog-item item-link" href="#"> Экшн-камеры</a>
+            
           </li>
           <li class="catalog-item">
-            <a class="catalog-item item-link"> </a>
-            <p class="catalog-item item-name">Фитнес-браслеты</p>
+            <a class="catalog-item item-link" href="#">Фитнес-браслеты </a>
+            
           </li>
           <li class="catalog-item">
-            <a class="catalog-item item-link"> </a>
-            <p class="catalog-item item-name">Умные часы</p>
+            <a class="catalog-item item-link" href="#"> Умные часы</a>
+            
           </li>
           <li class="catalog-item">
-            <a class="catalog-item item-link"> </a>
-            <p class="catalog-item item-name">Квадрокоптеры</p>
+            <a class="catalog-item item-link" href="#">Квадрокоптеры </a>
+            
           </li>
         </ul>
       </div>
@@ -250,6 +254,7 @@
       <div class="container">
         <h2 class="visually-hidden">Доставка</h2>
         <div class="delivery">
+          <div class="img-delivery"> </div>
           <a class="delivery-text" href="#">Доставим редкий товар под заказ</a>
           <button class="delivery-info" type="button">
             <span class="visually-hidden">Посмотреть дополнительную информацию</span>
@@ -258,7 +263,9 @@
       </div>
     </section>
     <!-- Информация о нас-->
-    <section class="about-info">
+    <div class="index-columns">
+      <section class="about-info">
+      
       <h2 class="title about-title">О нас</h2>
       <p class="text about-text">
         Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -271,6 +278,7 @@
         <li class="company-item">ТоксБерри</li>
       </ul>
       <a class="button about-button" href="#">Подробнее о нас</a>
+    
     </section>
     <!-- Контакты-->
     <section class="contacts">
@@ -290,11 +298,14 @@
         <li class="text contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
       </ul>
       <a class="button contacts-button" href="#">Напишите нам</a>
+    </div>
     </section>
+  </div>
 
     <!-- Рассылка-->
     <section class="subscription">
       <div class="container">
+        <div class="email">
         <div class="subscription-title">
           <h2 class="title sub-title">Подпишитесь на рассылку</h3>
         </div>
@@ -302,6 +313,7 @@
           <p class="text sub-text">Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
+      </div>
         <div class="send-email">
           <form class="send" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Отправка электронной почты</label>
