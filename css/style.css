@@ -46,6 +46,33 @@ body {
     margin: 0 auto;
        
 }
+.text{
+  font-family: "Rubik";
+  font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: #444444
+}
+.title{
+  font-family: "Raleway", sans-serif;
+font-weight: 800;
+font-size: 50px;
+line-height: 50px;
+}
+.button{
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+
+}
 /* Шапка */
 .header{
   padding-top: 40px;
@@ -154,27 +181,7 @@ font-size: 50px;
 line-height: 50px;
 
 }
-.text{
-  font-family: "Rubik";
-  font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 30px;
-color: #444444
-}
-.button{
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
 
-}
 .table-title{
   font-family: "Rubik";
   font-weight: normal;
@@ -212,12 +219,6 @@ color: #444444;
   letter-spacing: -0.02em;
   text-decoration: none;
 color: #000000;
-}
-.title{
-  font-family: "Raleway", sans-serif;
-font-weight: 800;
-font-size: 50px;
-line-height: 50px;
 }
 /*Услуги */
 .services{
@@ -266,6 +267,12 @@ text-decoration: none;
 color: #000000;
 }
 /*контакты */
+.index-columns{
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
 .company-item{
   font-family: "Rubik";
 font-weight: bold;
@@ -288,12 +295,6 @@ font-size: 18px;
 line-height: 30px;
   text-decoration-line: underline;
 color: #444444
-}
-.index-columns{
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
-  margin: 0 auto;
 }
 /*рассылка */
 
@@ -320,16 +321,17 @@ color: #444444
   padding-top: 53px;
 }
 /*футер */
-.page-footer .container{
-  display: flex;
-  justify-content:space-between ;
-  height: 320px;
-  
-}
 .page-footer{
   background-color: #444444;
   
 }
+.page-footer .container{
+  display: flex;
+  justify-content: space-between;
+  height: 320px;
+    
+}
+
 .footer-address{
   font-family: "Rubik";
 font-style: normal;
@@ -344,8 +346,8 @@ height: 38px;
 .footer-nav-list{
   display: flex;
   margin: 0;
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 .social-list{
   display: flex;
@@ -375,6 +377,17 @@ line-height: 30px;
 text-align: right;
 color: #FFFFFF;
 }
+/* Страница каталога */
+/* "Хлебные крошки" */
+.inner-header{
+  padding-left: 60px;
+}
+
+.breadcrumbs{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .breadcrumbs-link{
   font-family: "Rubik";
 font-weight: normal;
@@ -384,11 +397,36 @@ color: #000000;
 opacity: 0.6;
 text-decoration: none;
 }
+/* Каталог продуктов */
+.catalog-product {
+  display: flex;
+}
+/* Фильтрация */
 .filter-header{
   background-color: #DCDCDC;
+  height: 70px;
+  padding-left: 60px;
+   
+}
+.filter{
+  width: 468px;
+}
+.filter-form{
+  background-color: #E5E5E5;
 }
 .catalog-filter{
-  background: #E5E5E5;
+  width: 200px;
+  padding-left: 60px;
+
+}
+/* Сортировка*/
+.catalog-right-column{
+  width: 972px;
+  
+}
+.sort{
+  background-color: #EBEBEB;
+  padding-left: 72px;
 }
 .filter-title,
 .sort-title {
@@ -399,9 +437,7 @@ line-height: 20px;
 letter-spacing: 0.2em;
 text-transform: uppercase;
 }
-.sorting-type{
-  background-color: #EBEBEB;
-}
+
 .catalog-filter-title{
   font-family: "Rubik";
 font-weight: bold;
@@ -409,6 +445,7 @@ font-size: 18px;
 line-height: 20px;
 letter-spacing: -0.02em;
 }
+/* Товары */
 .control{
   font-family: "Rubik";
 font-weight: normal;
@@ -434,6 +471,14 @@ line-height: 21px;
 text-align: right;
 color: #444444;
 }
+.product-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.product-wrapper{
+  padding-left: 72px;
+}
 .show-more{
   font-family: "Raleway", sans-serif;
 font-style: normal;
@@ -445,8 +490,15 @@ text-align: center;
 letter-spacing: 0.2em;
 text-transform: uppercase;
 }
+/* Пагинация */
 .pagination{
   background-color: #EBEBEB;
+  padding-left: 72px;
+}
+.pagination-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .pagination-prev
 {
