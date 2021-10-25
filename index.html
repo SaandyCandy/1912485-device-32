@@ -58,17 +58,16 @@
     <section class="slider">
       <div class="container">
         <h2 class="visually-hidden">Слайдер главной страницы</h2>
+        <div class="index-columns">
         <!-- Стрелки-->
         <div class="slider-navigation">
           <button class="slider-toggle " type="button">
-            <span class="visually-hidden">Слайд 1</span>
+            <span class="visually-hidden">Следующий слайд</span>
           </button>
           <button class="slider-toggle" type="button">
-            <span class="visually-hidden">Слайд 2</span>
+            <span class="visually-hidden">Предыдущий слайд</span>
           </button>
-          <button class="slider-toggle" type="button">
-            <span class="visually-hidden">Слайд 3</span>
-          </button>
+          
         </div>
         <!-- Точки-->
         <ol class="slider-pagination">
@@ -177,7 +176,8 @@
 
             </div>
           </li>
-
+</ul>
+</div>
       </div>
     </section>
 
@@ -267,11 +267,13 @@
       <section class="about-info">
       
       <h2 class="title about-title">О нас</h2>
+      <div class="text-about">
       <p class="text about-text">
         Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
       </p>
       <p class="text about-text"> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
       </p>
+    </div>
       <ul class="company">
         <li class="company-item">Меловые линии</li>
         <li class="company-item">СДИК</li>
@@ -290,7 +292,7 @@
         <p class="text address-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </p>
-        <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+        <a class="contact-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
       </address>
       <h3 class="contacts-subtitle">Время работы</h3>
       <ul class="contacts-schedule">
@@ -328,9 +330,10 @@
   <!-- Футер-->
   <footer class="page-footer">
     <div class="container">
+      <a class="footer-logo" href="https://htmlacademy.ru/"><img class="logo-foot" src="img/device-footer.svg" width="145" height="35" alt="Лого Device"> </a>
+     <div class="footer-block">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-logo" href="https://htmlacademy.ru/"><img src="img/device-footer.svg" width="145" height="35" alt="Лого Device"> </a>
         <p class="footer-address">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p>
       </section>
@@ -348,7 +351,12 @@
             <a class="footer-nav-link" href="#">Контакты</a>
           </li>
         </ul>
-
+       </section>
+       <section class="footer-info">
+        <a class="contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+        
+      </section> 
+      </div>
         <div class="footer-social">
           <ul class="social-list">
             <li class="social-item"><a class="social-link" href="https://www.facebook.com/htmlacademy">
@@ -364,15 +372,13 @@
               </a>
             </li>
           </ul>
+          <a class="academy" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" width="115" height="35" alt="htmlacademy"> </a>
         </div>
       </section>
 
-      <section class="footer-info">
-        <a class="contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-        <a class="academy" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" width="115" height="35" alt="htmlacademy"> </a>
-
-      </section>
-
+     
+      
+    </div>
     </div>
   </footer>
 

@@ -141,9 +141,10 @@
                     <input class="visually-hidden radio-input" type="radio" id="Bluetoothno" name="Bluetooth">
                     <label class="control" for="Bluetoothno">Нет</label>
                   </li>
+                  </ul>
               </fieldset>
 
-              <button class="button" type="submit">Показать</button>
+              <button class="button button-filter" type="submit">Показать</button>
             </form>
 
           </div>
@@ -155,139 +156,137 @@
 
           <div class="sort">
 
-
-            <form class="sorting-type">
-              <h3 class="sort-title">Сортировка:</h2>
+            <h3 class="sort-title">Сортировка:</h3> 
+              <form class="sorting-type">
+                
                 <label class="visually-hidden" for="sorting">Сортировка:</label>
                 <select class="select-control" id="sorting" name="sorting">
                   <option value="popular">Сначала популярное</option>
                 </select>
                 <button class="visually-hidden" type="submit">Отсортировать</button>
-            </form>
+              </form>
 
-            <ul class="sort-order-list">
-              <li class="sort-order-item">
-                <a class="sort-order-link" href="#">
-                  <span class="visually-hidden">По возрастанию</span>
-                </a>
-              </li>
-              <li class="sort-order-item">
-                <a class="sort-order-link">
-                  <span class="visually-hidden">По убыванию</span>
-                </a>
-              </li>
-            </ul>
+              <ul class="sort-order-list">
+                <li class="sort-order-item">
+                  <a class="sort-order-link" href="#">
+                    <span class="visually-hidden">По возрастанию</span>
+                  </a>
+                </li>
+                <li class="sort-order-item">
+                  <a class="sort-order-link">
+                    <span class="visually-hidden">По убыванию</span>
+                  </a>
+                </li>
+              </ul>
 
 
           </div>
         
 
-        <!-- Карточки товаров-->
-        <div class="product-card">
+
+          <!-- Карточки товаров-->
+          <div class="product-card">
 
 
-          <div class="product-wrapper">
-            <h2 class="visually-hidden">Список товаров</h2>
-            <ul class="product-list">
-              <li class="product-item">
+            <div class="product-wrapper">
+              <h2 class="visually-hidden">Список товаров</h2>
+              <ul class="product-list">
+                <li class="product-item">
 
-                <div class="product-image">
-                  <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <div class="product-info">
-                    <a class="button" href="#">Подробнее</a>
+                  <div class="product-image">
+                    <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                    <div class="product-info">
+                      <a class="button" href="#">Подробнее</a>
+                    </div>
                   </div>
-                </div>
 
-                <div class="product-description">
-                  <a class="product-link" href="#">
-                    <h3 class="product-title">Любительская селфи-палка</h3>
-                  </a>
-                  <span class="product-price">500 ₽</span>
-                </div>
-              </li>
-
-              <li class="product-item">
-
-                <div class="product-image">
-                  <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
-                  <div class="product-info">
-                    <a class="button" href="#">Подробнее</a>
+                  <div class="product-description">
+                    <a class="product-link" href="#">
+                      <h3 class="product-title">Любительская селфи-палка</h3>
+                    </a>
+                    <span class="product-price">500 ₽</span>
                   </div>
-                </div>
+                </li>
 
-                <div class="product-description">
-                  <a class="product-link" href="#">
-                    <h3 class="product-title">Профессиональная селфи-палка </h3>
-                  </a>
-                  <span class="product-price">1500 ₽</span>
-                </div>
-              </li>
+                <li class="product-item">
 
-              <li class="product-item">
-
-                <div class="product-image">
-                  <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                  <div class="product-info">
-                    <a class="button" href="#">Подробнее</a>
+                  <div class="product-image">
+                    <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
+                    <div class="product-info">
+                      <a class="button" href="#">Подробнее</a>
+                    </div>
                   </div>
-                </div>
 
-                <div class="product-description">
-                  <a class="product-link" href="#">
-                    <h3 class="product-title">Непотопляемая селфи-палка</h3>
-                  </a>
-                  <span class="product-price">2 500 ₽</span>
-                </div>
-              </li>
-
-              <li class="product-item">
-
-                <div class="product-image">
-                  <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                  <div class="product-info">
-                    <a class="button" href="#">Подробнее</a>
+                  <div class="product-description">
+                    <a class="product-link" href="#">
+                      <h3 class="product-title">Профессиональная селфи-палка </h3>
+                    </a>
+                    <span class="product-price">1500 ₽</span>
                   </div>
-                </div>
+                </li>
 
-                <div class="product-description">
-                  <a class="product-link" href="#">
-                    <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
-                  </a>
-                  <span class="product-price">4 900 ₽</span>
-                </div>
-              </li>
-            </ul>
-            <button class="button show-more" type="button">Загрузить ещё</button>
-          </div>
+                <li class="product-item">
 
-          <!-- Страницы-->
-          <div class="pagination">
-            <ul class="pagination-list">
-              <li class="pagination-item">
-                <a class=" pagination-prev ">Назад</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">15</a>
-              </li>
-              <li class="pagination-item">
-                <a class=" pagination-next" href="#">Вперед</a>
-              </li>
-            </ul>
+                  <div class="product-image">
+                    <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    <div class="product-info">
+                      <a class="button" href="#">Подробнее</a>
+                    </div>
+                  </div>
+
+                  <div class="product-description">
+                    <a class="product-link" href="#">
+                      <h3 class="product-title">Непотопляемая селфи-палка</h3>
+                    </a>
+                    <span class="product-price">2 500 ₽</span>
+                  </div>
+                </li>
+
+                <li class="product-item">
+
+                  <div class="product-image">
+                    <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                    <div class="product-info">
+                      <a class="button" href="#">Подробнее</a>
+                    </div>
+                  </div>
+
+                  <div class="product-description">
+                    <a class="product-link" href="#">
+                      <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
+                    </a>
+                    <span class="product-price">4 900 ₽</span>
+                  </div>
+                </li>
+              </ul>
+              <button class="button show-more" type="button">Загрузить ещё</button>
+            </div>
+
+            <!-- Страницы-->
+            <div class="pagination">
+              <a class="pagination-prev">Назад</a>
+              <ul class="pagination-list">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item dots">
+                  <a class="pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">15</a>
+                </li>
+                
+              </ul>
+              <a class="pagination-next" href="#">Вперед</a> 
+            </div>
           </div>
         </div>
-      </div>
     </div>
 
     </div>
@@ -303,10 +302,10 @@
   <!-- Футер-->
   <footer class="page-footer">
     <div class="container">
+      <a class="footer-logo" href="https://htmlacademy.ru/"><img class="logo-foot" src="img/device-footer.svg" width="145" height="35" alt="Лого Device"> </a>
+     <div class="footer-block">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-logo" href="https://htmlacademy.ru/"><img src="img/device-footer.svg" width="145" height="35"
-            alt="Лого Device"> </a>
         <p class="footer-address">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p>
       </section>
@@ -324,7 +323,12 @@
             <a class="footer-nav-link" href="#">Контакты</a>
           </li>
         </ul>
-
+       </section>
+       <section class="footer-info">
+        <a class="contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+        
+      </section> 
+      </div>
         <div class="footer-social">
           <ul class="social-list">
             <li class="social-item"><a class="social-link" href="https://www.facebook.com/htmlacademy">
@@ -340,19 +344,15 @@
               </a>
             </li>
           </ul>
+          <a class="academy" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" width="115" height="35" alt="htmlacademy"> </a>
         </div>
       </section>
 
-      <section class="footer-info">
-        <a class="contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-        <a class="academy" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" width="115" height="35"
-            alt="htmlacademy"> </a>
-
-      </section>
-
+     
+      
+    </div>
     </div>
   </footer>
-
 
 
 
