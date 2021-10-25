@@ -45,8 +45,9 @@ body {
     width: 1160px;
     margin: 0 auto;
     
-       
+   
 }
+
 .text{
   font-family: "Rubik";
   font-style: normal;
@@ -542,20 +543,23 @@ margin-right: 36px;
 .catalog-product {
   display: flex;
 }
+
 /* Фильтрация */
 .filter-header{
   background-color: #DCDCDC;
   height: 70px;
-  padding-left: 60px;
+  padding-left: 240px;
+  margin-bottom: 71px;
      
 }
 
 .filter{
   width: 468px;
   margin-top:50px;
+  background-color: #E5E5E5;
 }
 .filter-form{
-  background-color: #E5E5E5;
+  padding-left: 160px;
 }
 .catalog-filter{
   width: 200px;
@@ -570,6 +574,7 @@ margin-right: 36px;
   width: 972px;
   margin-top: 50px;
   
+  
 }
 .sort{
   background-color: #EBEBEB;
@@ -577,12 +582,11 @@ margin-right: 36px;
   height: 70px;
   margin-bottom: 70px;
   display: flex;
+  width: 972px;
   
 }
 
-.product-description{
-  display: flex;
-}
+
 .filter-title,
 .sort-title {
   font-family: "Raleway", sans-serif;
@@ -618,7 +622,8 @@ font-size: 16px;
 line-height: 20px;
 }
 .product-item{
-  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
 }
 .product-link{
   font-family: "Rubik";
@@ -630,6 +635,17 @@ text-decoration: none;
 letter-spacing: -0.02em;
 color: #000000;
 }
+.product-title{
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.02em;
+}
 .product-price{
   font-family: "Rubik";
 
@@ -639,10 +655,19 @@ line-height: 21px;
 text-align: right;
 color: #444444;
 }
+.product-description{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
 .product-list{
   margin: 0;
   padding: 0;
   list-style: none;
+  display:grid;
+  grid-template-columns: repeat(2,360px);
+  gap: 40px;
+  margin-bottom: 44px;
 }
 .product-wrapper{
   padding-left: 72px;
@@ -666,6 +691,7 @@ margin-bottom: 51px;
   display: flex;
   justify-content: space-between;
   height: 70px;
+  margin-left: 72px;
   align-items: center;
   margin-bottom: 77px;
 }
