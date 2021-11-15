@@ -17,17 +17,17 @@
             alt="Лого Device"> </a>
         <div class="menu-user">
           <!-- Поле поиска-->
-          <div class="search">
-            <form class="search" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="search">Поиск по сайту</label>
-              <input class="search-input" type="search" id="search" placeholder="Поиск по сайту" name="search">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <div class="search">
+              <input class="search-input" type="search" id="search" placeholder="Поиск по сайту" name="search" >
               <button class="search-button" type="submit">Найти</button>
-            </form>
-          </div>
+            </div>
+          </form>
           <!-- Пользовательское меню-->
           <ul class="user-menu">
             <li class="user-item profile">
-              <a class="enter-link user-log" href="#">Коля Петухов</a>
+              <a class="user-log" href="#">Коля Петухов</a>
               <a class="logout-link user-log" href="#">Выйти</a>
 
             </li>
@@ -48,7 +48,7 @@
                           <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" />
                         </svg>
 
-                        <span class="visually-hidden">Удалить из корзины</span>
+                        <span class="visually-hidden">Удалить из корзины.</span>
                       </button>
                     </li>
                     <li class="cart-item">
@@ -59,7 +59,7 @@
                           <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" />
                         </svg>
 
-                        <span class="visually-hidden">Удалить из корзины</span>
+                        <span class="visually-hidden">Удалить из корзины.</span>
                       </button>
                     </li>
 
@@ -125,7 +125,7 @@
     </div>
   </header>
 
-  <main class="main-inner">
+  <main class="main-container main-inner">
     <div class="container">
       <header class="inner-header">
         <h2 class="title inner-header-title">Моноподы для селфи</h2>
@@ -258,12 +258,12 @@
               <legend class="catalog-filter-title title-bluetooth">Bluetooth</legend>
               <ul class="bluetooth-filter">
                 <li class="bluetooth-item">
-                  <input class="radio-input visually-hidden" type="radio" id="Bluetoothyes" name="Bluetoothyes" checked>
-                  <label class="control" for="Bluetoothyes">Есть</label>
+                  <input class="visually-hidden radio-input" type="radio" id="yes" name="Bluetooth" checked>
+                  <label class="control" for="yes">Есть</label>
                 </li>
                 <li class="bluetooth-item">
-                  <input class="radio-input visually-hidden" type="radio" id="Bluetoothno" name="Bluetoothno">
-                  <label class="control" for="Bluetoothno">Нет</label>
+                  <input class="visually-hidden radio-input " type="radio" id="not" name="Bluetooth">
+                  <label class="control" for="not">Нет</label>
                 </li>
               </ul>
             </fieldset>
@@ -325,7 +325,7 @@
               <a class="pagination-prev" href="#">Назад</a>
               <ul class="pagination-list">
                 <li class="pagination-item">
-                  <a class="pagination-link pagination-current">1</a>
+                  <a class="pagination-link pagination-current" href="#">1</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">2</a>
